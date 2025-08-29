@@ -2,7 +2,6 @@ body {
     display: flex;
     flex-direction: column;
     font-family: "Roboto";
-    justify-content: center;
 }
 
 
@@ -12,7 +11,7 @@ body {
 }
 
 /* Header and hero background-color and font-color */
-.header, .hero{
+.header, .hero, .footer{
     background-color: #1F2937;
     color: white;
 }
@@ -22,9 +21,14 @@ body {
     display: flex;
     font-size: 24px;
     font-weight: 900;
-    align-items: center;
+    gap: 500px;
     justify-content: center;
-    gap: 400px;
+}
+
+li , .sub{
+    font-size: 18px;
+    color: #e5e7eb;
+    font-weight: 300;
 }
 
 /* Setting of header links */
@@ -41,8 +45,9 @@ button {
     background-color: #3882F6;
     color:white;
     padding: 8px;
-    width: 100px;
-    border-radius: 10%;
+    max-width: 200px;
+    border-radius: 10px;
+    border: 0
 }
 
 /* Hero section */
@@ -82,8 +87,8 @@ button {
     display: flex;
     flex-direction: column;
     margin: 0;
-    align-items: center;
     gap: 40px;
+    align-items: center;
 }
 
 .showcase .main{
@@ -105,14 +110,6 @@ button {
 .container{
     display: flex;
     gap: 50px;
-}
-
-/* Ads section */
-
-.ads{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 /* Quote section */
@@ -142,11 +139,45 @@ button {
     justify-content: end;
     font-weight: 900;
     margin-left: 500px;
+    flex-shrink: 0;
+}
+
+/* Ads section */
+
+.ads {
+    display: flex;
+    justify-content: center;
+    background-color: #3882F6;
+    gap: 200px;
+    margin: 100px auto;  
+    padding: 50px 100px;
+    border-radius: 10px;
+    color: white;
+}
+.ads button{
+    border: 2px white solid;
+    padding: 10px 40px;
+}
+
+.ads .case{
+    display: flex;
+    flex-direction: column;
+}
+
+.ads .case .main{
+    max-width: 500px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.ads .case .sub{
+    max-width: 1000px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
-li , .sub{
-    font-size: 18px;
-    color: #e5e7eb;
-    font-weight: 300;
-}
